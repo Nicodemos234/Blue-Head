@@ -5,25 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Teleporter : MonoBehaviour
 {
-
-  // Start is called before the first frame update
-  void Start()
-  {
-
-  }
-
-  // Update is called once per frame
-  void Update()
-  {
-
-  }
-
+  public int scene;
   private void OnCollisionEnter2D(Collision2D other)
   {
     if (other.gameObject.tag == "Player")
     {
       // Load the level 2.
-      SceneManager.LoadScene(2);
+      SceneManager.LoadScene(scene);
     }
   }
 }
