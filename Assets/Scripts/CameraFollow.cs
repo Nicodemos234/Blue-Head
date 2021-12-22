@@ -15,6 +15,6 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cameraTransform.SetPositionAndRotation(new Vector3(follow.transform.position.x, follow.transform.position.y, -10), follow.transform.rotation);
+        cameraTransform.SetPositionAndRotation(new Vector3(follow.transform.position.x, follow.transform.position.y, -10), transform.rotation);
     }
 }
